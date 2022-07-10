@@ -199,7 +199,7 @@ class MarketEnvironment():
     def stop_transaction(self):
         self.transacting = False
 
-
+ 
 
 
 
