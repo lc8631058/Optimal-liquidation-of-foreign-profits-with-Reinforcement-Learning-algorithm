@@ -77,3 +77,4 @@ for i in range(len(A_list)):
     plt.savefig(add)
     # plt.legend()
     # plt.show()
+ 
