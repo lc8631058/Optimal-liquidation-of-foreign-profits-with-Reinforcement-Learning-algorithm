@@ -30,7 +30,7 @@ def calibration_fx(data, dt, if_log=True):
     # y for LinearRegression
     label_ = np.array(y_t[1:, :] - y_t[:-1, :])
     # label_ = np.concatenate((time_, label_), axis=1)
-    # x for LinearRegression
+    # x for LinearRegression 
     # train_ = y_t[:-1, :].reshape(-1,1)
     train_ = y_t[:-1, :]
     # train_ = np.concatenate((time_, train_), axis=1)
