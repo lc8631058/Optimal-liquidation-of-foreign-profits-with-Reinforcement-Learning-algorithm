@@ -232,5 +232,5 @@ class ReplayBuffer:
 
         return (states, actions, rewards, next_states)
 
-    def __len__(self):
+    def __len__(self): 
         return len(self.memory)
