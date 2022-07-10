@@ -30,7 +30,7 @@ def stochastic_DP(x_min, N_x, Delta_x, v_min, v_max, N_v, Delta_v, T, A, N, Sigm
     :param T: Total time steps
     :param A: param of GOU
     :param N: param of GOU
-    :param Sigma: param of GOU
+    :param Sigma: param of GOU 
     :return: optimal policy a*
     """
     F_star = np.zeros([N_x + 1, N_v + 1, 2], dtype=np.float32)
