@@ -6,16 +6,29 @@ import matplotlib.animation as animation
 from matplotlib import cm
 
 def function(t, p, q, c):
+    """
+    p,q,c function
+    :param p,q,c: parameters
+    """
     # t is a vector
     return p * (t * t) + q * t + c
 
 def pqc_condition(p, q, c):
+    """
+    judge if the parameters p,q,c are legal
+    """
     if p < 0 or q < 0 or c < x_min or p * (T**2) + q * T + c > x_max:
         return False
     else:
         return True
 
 def generate_pqc(N, T, x_min, x_max):
+    """
+    Generate N (p,q,c) pairs over time T given price limit (x_min, x_max)
+    :param N: number of pairs needed to be generated
+    :param T: time horizon
+    :param x_min, x_max: price limit
+    """
     R = []
     p_min, p_max = 0, (x_max - x_min) / (T ** 2)
     q_min, q_max = 0, (x_max - x_min) / T
@@ -35,6 +48,12 @@ def generate_pqc(N, T, x_min, x_max):
     return R
 
 def optimal_strategy_estimation(X, R, v_min, v_max):
+    """
+    Estimate the optimal strategy given (p,q,c) pairs under volume limit (v_min, v_max)
+    :param X: prices
+    :param R: (p,q,c) pairs
+    :param v_min, v_max: volume limit
+    """
     M = X.shape[0]
     len_R = len(R)
     X_thres = np.zeros([len_R, T + 1], dtype=np.float32)
@@ -73,6 +92,9 @@ def estimated_a_star(x_thres, x, v, t):
     """
     return estimated a*
     :param x_thres: estimated optimal threshold of x over t
+    :param x: price
+    :param v: volume
+    :param t: time
     """
     if t == T:
         return v
@@ -81,6 +103,14 @@ def estimated_a_star(x_thres, x, v, t):
                (min(v_max, max(0, v - v_min) + v_min * np.heaviside(v - v_min, 1) * np.heaviside(v_max - v, 1)))
 
 def MC_simulation(seed, M, T, START_PRICE, A, N, SIGMA):
+    """
+    Simulate trajectories by parameters A,N,Sigma
+    :param seed: random seed
+    :param M: number of trajectories
+    :param T: time horizon
+    :param START_PRICE: as the name
+    :A, N, Sigma: parameters from OU process
+    """
     np.random.seed(seed)
     DELTA_W = np.random.normal(loc=0., scale=1., size=(M, T))
     X = np.zeros([M, T + 1], dtype=np.float32)
