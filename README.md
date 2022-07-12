@@ -38,7 +38,7 @@ currencies, namely USD (US Dollar), CNY(Chinese Yuan) and GBP(Great British Poun
 optimality measure based on the gap between the average transaction rate captured by a strategy and the minimum rate
 over the liquidation period. The metric is used to compare the performance of EOLS to the Time Weighted Average Price
 (TWAP), SDP and the DRL algorithms Deep Q-Network (DQN) and Proximal Policy Optimization (PPO). The results show
-that EOLS outperforms TWAP by $54\%$, and DQN and PPO by $15 − 27\%$. EOLS runs in average $20$ times faster than DQN
+that EOLS outperforms TWAP by $54$ percent, and DQN and PPO by $15 − 27$ percent. EOLS runs in average $20$ times faster than DQN
 and PPO. It has a performance on par with SDP but runs $44$ times faster. EOLS is the first algorithm that utilizes a closed form solution of the SDP strategy to achieve quasi-optimal decisions in a liquidation task. Compared with state-of-the-art
 DRL algorithms, it exhibits a simpler structure, superior performance and significantly reduced compute time, making EOLS
 better suited in practice.
@@ -47,53 +47,50 @@ better suited in practice.
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* pytorch 1.7.1, scikit-learn 0.24.2, numpy 1.19.2
+* Mac OS
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* The algorithm introduced in our paper is implemented in Estimated_Stochastic_DP.py
 
-### Executing program
+<!-- ### Executing program
 
 * How to run the program
 * Step-by-step bullets
 ```
 code blocks for commands
-```
-
+``` -->
+<!-- 
 ## Help
 
 Any advise for common problems or issues.
 ```
 command to run if program contains helper info
-```
+``` -->
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Linwei Li
 
 ## Version History
 
-* 0.2
+<!-- * 0.2
     * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
+    * See [commit change]() or See [release history]() -->
 * 0.1
     * Initial Release
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+<!-- This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details -->
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
+<!-- Inspiration, code snippets, etc.
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
 * [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 * [dbader](https://github.com/dbader/readme-template)
 * [zenorocha](https://gist.github.com/zenorocha/4526327)
 * [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+ -->
