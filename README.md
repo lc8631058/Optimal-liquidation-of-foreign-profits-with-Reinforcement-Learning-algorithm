@@ -1,8 +1,3 @@
-
-
-
-
-
 I am currently busy with my thesis, then I will optimize the code. 
 
 # Optimal liquidation of foreign profits with a model-based Reinforcement Learning algorithm
