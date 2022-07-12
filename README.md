@@ -19,9 +19,9 @@ The stochastic processes used in our algorithm:
 In this article, we consider the case of a multinational company realizing profits in a country other than its base country.
 The currencies used in the base and foreign countries are referred to as the domestic and foreign currencies respectively.
 For its quarterly and yearly financial statements, the company transfers its profits from a foreign bank account to a domestic
-bank account. Thus, the foreign currency liquidation task consists formally in exchanging over a period T a volume V of
-cash in the foreign currency f for a maximum volume of cash in the domestic currency d. The foreign exchange (FX)
-rate that prevails at time t is denoted Xd/f (t) and is defined as the worth of one unit of currency d in the currency f . We
+bank account. Thus, the foreign currency liquidation task consists formally in exchanging over a period $T$ a volume $V$ of
+cash in the foreign currency $f$ for a maximum volume of cash in the domestic currency $d$. The foreign exchange (FX)
+rate that prevails at time $t$ is denoted $X_{d/f} (t)$ and is defined as the worth of one unit of currency $d$ in the currency $f$. We
 assume in this article that the natural logarithm of the FX rate $x_t = log X_{d/f} (t)$ follows a discrete generalized Ornstein Uhlenbeck (OU) process, a process which generalizes the Brownian motion and mean-reverting processes. We also assume
 minimum and maximum volume constraints on each transaction. Foreign currency liquidation exposes the multinational
 company to financial risks and can have a significant impact on its final revenues, since FX rates are hard to predict and often
@@ -38,8 +38,8 @@ currencies, namely USD (US Dollar), CNY(Chinese Yuan) and GBP(Great British Poun
 optimality measure based on the gap between the average transaction rate captured by a strategy and the minimum rate
 over the liquidation period. The metric is used to compare the performance of EOLS to the Time Weighted Average Price
 (TWAP), SDP and the DRL algorithms Deep Q-Network (DQN) and Proximal Policy Optimization (PPO). The results show
-that EOLS outperforms TWAP by 54%, and DQN and PPO by 15 − 27%. EOLS runs in average 20 times faster than DQN
-and PPO. It has a performance on par with SDP but runs 44 times faster. EOLS is the first algorithm that utilizes a closed form solution of the SDP strategy to achieve quasi-optimal decisions in a liquidation task. Compared with state-of-the-art
+that EOLS outperforms TWAP by $54%$, and DQN and PPO by $15 − 27%￥. EOLS runs in average $20$ times faster than DQN
+and PPO. It has a performance on par with SDP but runs $44$ times faster. EOLS is the first algorithm that utilizes a closed form solution of the SDP strategy to achieve quasi-optimal decisions in a liquidation task. Compared with state-of-the-art
 DRL algorithms, it exhibits a simpler structure, superior performance and significantly reduced compute time, making EOLS
 better suited in practice.
 
