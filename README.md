@@ -38,7 +38,7 @@ currencies, namely USD (US Dollar), CNY(Chinese Yuan) and GBP(Great British Poun
 optimality measure based on the gap between the average transaction rate captured by a strategy and the minimum rate
 over the liquidation period. The metric is used to compare the performance of EOLS to the Time Weighted Average Price
 (TWAP), SDP and the DRL algorithms Deep Q-Network (DQN) and Proximal Policy Optimization (PPO). The results show
-that EOLS outperforms TWAP by $54/%$, and DQN and PPO by $15 − 27/%￥. EOLS runs in average $20$ times faster than DQN
+that EOLS outperforms TWAP by $54\%$, and DQN and PPO by $15 − 27\%$. EOLS runs in average $20$ times faster than DQN
 and PPO. It has a performance on par with SDP but runs $44$ times faster. EOLS is the first algorithm that utilizes a closed form solution of the SDP strategy to achieve quasi-optimal decisions in a liquidation task. Compared with state-of-the-art
 DRL algorithms, it exhibits a simpler structure, superior performance and significantly reduced compute time, making EOLS
 better suited in practice.
