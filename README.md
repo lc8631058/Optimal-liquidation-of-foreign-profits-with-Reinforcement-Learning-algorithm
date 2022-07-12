@@ -22,7 +22,7 @@ For its quarterly and yearly financial statements, the company transfers its pro
 bank account. Thus, the foreign currency liquidation task consists formally in exchanging over a period T a volume V of
 cash in the foreign currency f for a maximum volume of cash in the domestic currency d. The foreign exchange (FX)
 rate that prevails at time t is denoted Xd/f (t) and is defined as the worth of one unit of currency d in the currency f . We
-assume in this article that the natural logarithm of the FX rate xt = log Xd/f (t) follows a discrete generalized Ornstein Uhlenbeck (OU) process, a process which generalizes the Brownian motion and mean-reverting processes. We also assume
+assume in this article that the natural logarithm of the FX rate $x_t = log X_{d/f} (t)$ follows a discrete generalized Ornstein Uhlenbeck (OU) process, a process which generalizes the Brownian motion and mean-reverting processes. We also assume
 minimum and maximum volume constraints on each transaction. Foreign currency liquidation exposes the multinational
 company to financial risks and can have a significant impact on its final revenues, since FX rates are hard to predict and often
 quite volatile. We introduce a Reinforcement Learning (RL) framework for finding the liquidation strategy that maximizes
