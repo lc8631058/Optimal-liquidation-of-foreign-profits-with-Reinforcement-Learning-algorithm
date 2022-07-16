@@ -213,6 +213,7 @@ class ReplayBuffer:
         """Add new experience to memory"""
         for STATE, ACTION, REWARD, NEXT_STATE in zip(state, action, reward, next_state):
             self.memory.append(Transition(STATE, ACTION, REWARD, NEXT_STATE))
+        # abounden
         #     e = {"state": STATE, "action": ACTION, "reward": REWARD, "next_state": NEXT_STATE}
         #     # e = self.experience(state, action, reward, next_state, done)
         #     if not all(e) in self.memory:
