@@ -140,26 +140,6 @@ v_max = 25
 T = 100
 M = 2000
 
-# when i == 0 in calibration
-# # Downtrend
-# A = -0.02038755
-# N = -0.00205892
-# SIGMA = 0.0074969
-# START_PRICE = 0.030141156911986808
-
-# # when i == 46
-# # Flat trend
-# A = -0.07930878
-# N = 0.01341533
-# SIGMA = 0.0038368
-# START_PRICE = 0.1655991806495659
-
-# when i == 20
-# Up trend
-# A = -0.05549867
-# N = 0.02086743
-# SIGMA = 0.00464528
-# START_PRICE = 0.30814624558413484
 
 currency= 'USD'
 StartIndex = 0
